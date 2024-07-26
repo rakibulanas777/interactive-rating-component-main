@@ -2,6 +2,7 @@ const ratingButtons = document.querySelectorAll(".button_flex .rating_btn");
 const star = document.getElementById("star");
 const submit_btn = document.getElementById("submit");
 const box_container = document.getElementById("box_container");
+const submited = document.getElementById("submited");
 const thank = document.getElementById("thank");
 let starNum = 1;
 
@@ -24,6 +25,7 @@ ratingButtons.forEach((btn) => {
 submit_btn.addEventListener("click", () => {
   box_container.style.display = "none";
   thank.style.display = "flex";
+  submited.textContent = `You selected ${starNum} out 5`;
   setTimeout(() => {
     thank.style.display = "none";
     box_container.style.display = "flex";
