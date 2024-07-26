@@ -1,0 +1,131 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.box_container {
+  padding: 20px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 320px;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rating_flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.rating {
+  padding: 12px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: relative;
+  background-color: hsla(217, 100%, 78%, 0.151);
+}
+
+.rating_star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title_text {
+  color: white;
+  font-size: 4vh;
+  font-weight: 700;
+}
+.desc_text {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  text-align: justify;
+  font-weight: 400;
+}
+
+.button_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.rating_btn {
+  padding: 12px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  position: relative;
+  background-color: hsla(217, 100%, 78%, 0.151);
+}
+
+.rating_btn:hover {
+  background-color: white;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  padding: 13px 0px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.active_submit_btn {
+  background-color: hsl(0, 0%, 100%);
+  padding: 13px 0px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  padding: 12px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  color: hsl(0, 0%, 0%);
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  position: relative;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submited {
+  padding: 12px 0px;
+  border-radius: 20px;
+  display: inline;
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  background-color: hsla(214, 89%, 85%, 0.075);
+  outline: none;
+  border: none;
+}
+
+.thank_img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}

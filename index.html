@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_container" id="box_container">
+      <div class="rating_flex" id="star">
+        <div class="rating">
+          <img src="/images/icon-star.svg" alt="" class="rating_star" />
+        </div>
+      </div>
+
+      <div class="title_text">How did we go?</div>
+      <div class="desc_text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolor
+        cum, deserunt expedita illo, velit veniam sequi id in quaerat odio error
+        perferendis tempore quod debitis possimus ut est sapiente!
+      </div>
+      <div class="button_flex">
+        <button class="rating_btn">1</button
+        ><button class="rating_btn">2</button
+        ><button class="rating_btn">3</button
+        ><button class="rating_btn">4</button
+        ><button class="rating_btn">5</button>
+      </div>
+      <button class="submit" disabled id="submit">submit</button>
+    </div>
+    <div class="box_container" id="thank" style="display: none">
+      <div class="center">
+        <img
+          src="./images/illustration-thank-you.svg"
+          width=""
+          class="thank_img"
+          alt=""
+        />
+      </div>
+      <button class="submited">You selected 4 out 5</button>
+      <div class="title_text" style="text-align: center">Thank You</div>
+      <div class="desc_text" style="text-align: center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
+        exercitationem!
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
